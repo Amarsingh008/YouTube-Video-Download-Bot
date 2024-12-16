@@ -26,7 +26,7 @@ async def process_youtube_link(client, message):
         ydl_opts = {
             'outtmpl': 'downloaded_video_%(id)s.%(ext)s',
             'progress_hooks': [lambda d: print(d['status'])],
-            'cookiefile': 'cookies.txt'
+           # 'cookiefile': 'cookies.txt'
         }
 
         if Config.HTTP_PROXY != "":
